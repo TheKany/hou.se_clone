@@ -21,5 +21,10 @@
   "homepage": "https://github.com/TheKany/hou.se_clone#readme",
   "dependencies": {
     "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
