@@ -34,13 +34,13 @@ $sm-col: 4;
 $sm-margin: 5px;
 
 /* TABLET */
-$md-breakPoint: 768px;
+
 $md-col: 12;
 $md-margin: 30px;
 $md-max-container: 960px + ($md-margin * 2);
 
 /* DESKTOP */
-$lg-breakPoint: 1200px;
+
 $lg-col: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-col;
@@ -67,7 +67,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-col;
   }
 
   /* TABLET */
-  @media screen and (min-width: $md-breakPoint) {
+  @include responsive(T) {
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
@@ -80,7 +80,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-col;
   }
 
   /* DESKTOP */
-  @media screen and (min-width: $lg-breakPoint) {
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding: 0;
 
