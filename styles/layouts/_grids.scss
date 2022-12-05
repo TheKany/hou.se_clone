@@ -87,7 +87,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-col;
     @for $i from 1 through $lg-col {
       .col-lg-#{$i} {
         // width: ($i / $sm-col) * 100%;
-        width: percentage($lg-unit + $gutter) * $i;
+        width: ($lg-unit + $gutter) * $i;
       }
     }
   }
