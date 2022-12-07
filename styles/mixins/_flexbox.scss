@@ -1,31 +1,30 @@
 $flex-map: (
   start: flex-start,
   end: flex-end,
-  sb: space-between,
-  sa: space-around,
+  between: space-between,
+  around: space-around,
   stretch: stretch,
-  c: center,
+  center: center,
 );
-
-@function get_flex_value($key) {
+@function _get-flex-value($key) {
   @return map-get($flex-map, $key);
 }
 
 @mixin flexbox($jc: center, $ai: center) {
   display: flex;
-  justify-content: get_flex_value($jc);
-  align-items: get_flex_value($ai);
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
 }
 
-@mixin inline_flexbox($jc: center, $ai: center) {
+@mixin inline-flexbox($jc: center, $ai: center) {
   display: inline-flex;
-  justify-content: get_flex_value($jc);
-  align-items: get_flex_value($ai);
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
 }
 
-@mixin column_flexbox($jc: center, $ai: center) {
+@mixin column-flexbox($jc: center, $ai: center) {
   display: flex;
   flex-direction: column;
-  justify-content: get_flex_value($jc);
-  align-items: get_flex_value($ai);
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
 }
