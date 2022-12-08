@@ -1,16 +1,23 @@
+/* 변수들 */
 @import './constants/colors';
 @import './constants/typography';
 @import './constants/breakpoints';
 
+/* 기본 설정 */
 @import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
 
+/* 믹스인 설정 */
 @import './mixins/text-style';
 @import './mixins/responsive';
 @import './mixins/positons';
 @import './mixins/flexbox';
 
+/* 모듈 설정 */
 @import './modules/tags';
+@import './modules/avatars';
+@import './modules/start-rating';
 
+/* 레이아웃 설정 */
 @import './layouts/grids';

@@ -2,11 +2,12 @@
 @font-face {
   font-family: 'svgFont';
   /* 경로의 기준은 html에 적용할 파일을 기준으로 => style.css */
-  src: url('/assets/fonts/svgFont.eot');
-  src: url('/assets/fonts/svgFont.eot#iefix') format('embedded-opentype'),
-    url('/assets/fonts/svgFont.ttf') format('truetype'),
-    url('/assets/fonts/svgFont.woff') format('woff'),
-    url('/assets/fonts/svgFont.svg#svgFont') format('svg');
+  src: url('/hou.se_clone/assets/fonts/svgFont.eot');
+  src: url('/hou.se_clone/assets/fonts/svgFont.eot#iefix')
+      format('embedded-opentype'),
+    url('/hou.se_clone/assets/fonts/svgFont.ttf') format('truetype'),
+    url('/hou.se_clone/assets/fonts/svgFont.woff') format('woff'),
+    url('/hou.se_clone/assets/fonts/svgFont.svg#svgFont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

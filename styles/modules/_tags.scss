@@ -11,7 +11,7 @@
 .tag_pink {
   @extend %tag_base;
   color: $white;
-  background-color: $pink;
+  background-color: $red;
 }
 
 .tag_green {
@@ -22,6 +22,6 @@
 
 .tag_grey {
   @extend %tag_base;
-  color: $grey-secondary;
-  background-color: $grey-border;
+  color: $secondary;
+  background-color: $border;
 }
